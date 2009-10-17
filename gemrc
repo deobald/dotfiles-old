@@ -1,0 +1,13 @@
+--- 
+:update_sources: true
+:sources: 
+- http://gems.rubyforge.org
+- http://gems.github.com
+update: --env-shebang
+rdoc: --inline-source --line-numbers --format=html --template=hanna
+:benchmark: false
+install: --env-shebang
+:bulk_threshold: 1000
+gem: --no-ri
+:verbose: true
+:backtrace: false

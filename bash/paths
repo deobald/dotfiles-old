@@ -1,0 +1,15 @@
+# PATH
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+export PATH="~/.bash/bin:$PATH"
+
+export PATH="$HOME/opt/29west/LBM_3.5.1/Darwin-9.7.0-x86_64/bin:$PATH"
+export DYLD_LIBRARY_PATH="$HOME/opt/29west/LBM_3.5.1/Darwin-9.7.0-x86_64/lib"
+
+export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/"
+export JRUBY_HOME=/usr/local/jruby
+
+export PATH="$HOME/opt/clojure:$PATH"
+export CLASSPATH="$HOME/opt/clojure/jars/"
+export CLOJURE_EXT="$HOME/opt/clojure/jars/"
+

@@ -1,0 +1,14 @@
+[user]
+  name = Gareth Jones
+  email = gareth.e.jones@gmail.com
+[alias]
+  co = checkout
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+[core]
+  excludesfile = /Users/gjones/.gitignore
+  editor = mvim
+[apply]
+  whitespace = nowarn

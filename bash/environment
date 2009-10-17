@@ -1,0 +1,4 @@
+# scm
+export SVN_EDITOR="mvim -w"
+export GIT_EDITOR="mvim -w"
+

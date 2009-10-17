@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# svn functions
+
+function svn_rm_missing {
+  svn st | grep \! | awk '{ print $2}' | xargs svn rm
+}
+
+function svn_add_new {
+  svn st | grep \? | awk '{ print $2}' | xargs svn add
+}
+
+# ruby functions
+
+function switch_jruby {
+  if [ -d /usr/local/jruby ]; then
+    export JRUBY_HOME=/usr/local/jruby
+    export PATH=$JRUBY_HOME/bin:$PATH
+  fi
+}
+
+function switch_ruby {
+  export PATH=/usr/local/bin:$PATH
+}
