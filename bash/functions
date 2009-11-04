@@ -22,3 +22,6 @@ function switch_jruby {
 function switch_ruby {
   export PATH=/usr/local/bin:$PATH
 }
+
+# calculator
+calc(){ awk "BEGIN{ print $* }" ;}
