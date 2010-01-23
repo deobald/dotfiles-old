@@ -10,7 +10,7 @@ endif
 colorscheme wombat
 
 " set default font
-set gfn=Inconsolata:h14
+set gfn=Inconsolata:h18
 
 " ignore case in searches, except if you type a capital letter
 set ignorecase
