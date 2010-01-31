@@ -3,12 +3,13 @@
   email = gareth.e.jones@gmail.com
 [alias]
   co = checkout
+  ci = commit
 [color]
   diff = auto
   status = auto
   branch = auto
 [core]
   excludesfile = /Users/gjones/.gitignore
-  editor = mvim
+  editor = mvim 
 [apply]
   whitespace = nowarn
