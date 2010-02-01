@@ -77,7 +77,7 @@ set showmatch
 set matchtime=1
 
 " vimclojure
-let vimclojure#NailgunClient = "/usr/local/clojure/vimclojure/ng"
+let vimclojure#NailgunClient = "/Users/garethjones/opt/src/vimclojure-2.1.2/ng"
 let clj_want_gorilla = 1
 let clj_highlight_builtins = 1
 let clj_highlight_contrib = 1
