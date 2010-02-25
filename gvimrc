@@ -3,14 +3,22 @@ filetype on
 compiler ruby
 
 if has('gui_running')
-  " do some gui specific stuff here?
+  " default screen size
+  set fuoptions=maxvert,maxhorz
+
+  " turn off scrollbar
+  set guioptions-=rL
+
+  " Unmap Apple+Shift+T and map to goto method
+  macmenu &File.Open\ Tab\.\.\. key=<nop>
+  nnoremap <D-T> :FufTag!<CR>
 endif
 
 " set default color scheme
 colorscheme wombat
 
 " set default font
-set gfn=Inconsolata:h18
+set gfn=Inconsolata:h16
 
 " ignore case in searches, except if you type a capital letter
 set ignorecase
@@ -19,10 +27,6 @@ set smartcase
 " easy to source / edit this file
 map ,s :source ~/.vimrc<CR>
 map ,v :e ~/.vimrc<CR>
-
-" default screen size
-set lines=50
-set columns=150
 
 set go-=T " hide the toolbar by default
 syntax on " turn on syntax highlighting
@@ -42,13 +46,46 @@ set expandtab
 set smarttab
 set cindent
 
+" map comments to apple/
+nmap <D-/> ,c<Space>
+vmap <D-/> ,c<Space>
+imap <D-/> <C-O>,c<Space>
+
+" bind command-] to shift right
+nmap <D-]> >>
+vmap <D-]> >>
+imap <D-]> <C-O>>>
+ 
+" bind command-[ to shift left
+nmap <D-[> <<
+vmap <D-[> <<
+imap <D-[> <C-O><<
+
 " fuzzy finder mapping
-" map <leader>t :FuzzyFinderFile<CR>
+map <leader>t :FuzzyFinderFile<CR>
 
 " renew finder cache shortcut
 map <leader>r :FuzzyFinderRenewCache<CR>
 
-map <leader>t :NERDTree<CR>
+" NERDTree 
+ 
+" Enable nice colors
+let NERDChristmasTree = 1
+ 
+" Make it easy to see where we are
+let NERDTreeHighlightCursorline = 1
+ 
+" Make bookmarks visible
+let NERDTreeShowBookmarks = 1
+ 
+" Show hidden files
+let NERDTreeShowHidden = 1
+"Don't hijack NETRW
+"let NERDTreeHijackNetrw = 0
+let NERDTreeIgnore=['\.$', '\~$']
+ 
+" Make F2 open NERDTree
+nmap <F2> :NERDTreeToggle<CR>
 
 "au BufRead *.rb :emenu Snippets.ruby
 "au BufRead *.rake :emenu Snippets.ruby
@@ -77,8 +114,17 @@ set showmatch
 set matchtime=1
 
 " vimclojure
-let vimclojure#NailgunClient = "/Users/garethjones/opt/src/vimclojure-2.1.2/ng"
+"let vimclojure#NailgunClient = "/Users/garethjones/opt/src/vimclojure-2.1.2/ng"
 let clj_want_gorilla = 1
 let clj_highlight_builtins = 1
 let clj_highlight_contrib = 1
 let clj_paren_rainbow = 1
+
+" ruby tests from drew pope
+
+map <silent> <LocalLeader>rb :RunAllRubyTests<CR>
+map <silent> <LocalLeader>rc :RunRubyFocusedContext<CR>
+map <silent> <LocalLeader>rf :RunRubyFocusedUnitTest<CR>
+
+" rebuild ctags
+map <silent> <LocalLeader>rt :!ctags -R --exclude=".git\|.svn\|log\|tmp\|db\|pkg" --extra=+f<CR>
