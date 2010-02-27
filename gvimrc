@@ -2,6 +2,9 @@ syntax on
 filetype on
 compiler ruby
 
+set backupdir=/tmp
+set directory=/tmp
+
 if has('gui_running')
   " default screen size
   set fuoptions=maxvert,maxhorz

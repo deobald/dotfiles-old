@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
 CLASS_PATH=$HOME/opt/jars/jline-0.9.94.jar:$HOME/opt/jars/clojure.jar:$HOME/opt/jars/clojure-contrib.jar 
+breakchars="(){}[],^%$#@\"\";:''|\\"
 
-java -cp "$CLASS_PATH" clojure.main
-
+if [ $# -eq 0 ]; then 
+  exec rlwrap --remember -c -b "$breakchars" \
+  -f "$HOME"/.clj_completions \
+  java -cp "$CLASS_PATH" clojure.main --repl
+else
+  exec java -cp "$CLASS_PATH" clojure.main $1 -- "$@"
+fi
