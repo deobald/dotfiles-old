@@ -18,7 +18,7 @@ if has('gui_running')
 endif
 
 " set default color scheme
-colorscheme wombat
+colorscheme simplewhite
 
 " set default font
 set gfn=Inconsolata:h16
@@ -116,8 +116,6 @@ nnoremap <silent><D-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 set showmatch
 set matchtime=1
 
-" vimclojure
-"let vimclojure#NailgunClient = "/Users/garethjones/opt/src/vimclojure-2.1.2/ng"
 let clj_want_gorilla = 1
 let clj_highlight_builtins = 1
 let clj_highlight_contrib = 1

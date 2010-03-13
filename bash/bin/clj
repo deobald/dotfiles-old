@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CLASS_PATH=$HOME/opt/jars/jline-0.9.94.jar:$HOME/opt/jars/clojure.jar:$HOME/opt/jars/clojure-contrib.jar 
+CLASS_PATH=/usr/local/jars/clojure.jar:/usr/local/jars/clojure-contrib.jar 
 breakchars="(){}[],^%$#@\"\";:''|\\"
 
 if [ $# -eq 0 ]; then 
