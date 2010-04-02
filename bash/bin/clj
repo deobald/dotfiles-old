@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CLASS_PATH=/usr/local/jars/clojure.jar:/usr/local/jars/clojure-contrib.jar 
+CLASS_PATH=/usr/local/jars/clojure.jar:/usr/local/jars/clojure-contrib.jar:/usr/local/jars/LBM_3.6.2_jdk1.5.0_12.jar
 breakchars="(){}[],^%$#@\"\";:''|\\"
 
 if [ $# -eq 0 ]; then 
@@ -8,5 +8,5 @@ if [ $# -eq 0 ]; then
   -f "$HOME"/.clj_completions \
   java -cp "$CLASS_PATH" clojure.main --repl
 else
-  exec java -cp "$CLASS_PATH" clojure.main $1 -- "$@"
+  exec java -cp "$CLASS_PATH" clojure.main $@
 fi

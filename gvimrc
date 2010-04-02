@@ -6,6 +6,9 @@ set backupdir=/tmp
 set directory=/tmp
 
 if has('gui_running')
+  " set default color scheme
+  colorscheme simplewhite
+
   " default screen size
   set fuoptions=maxvert,maxhorz
 
@@ -17,8 +20,15 @@ if has('gui_running')
   nnoremap <D-T> :FufTag!<CR>
 endif
 
-" set default color scheme
-colorscheme simplewhite
+" helpful insertion shortcuts?
+imap uu _
+imap hh =>
+imap aa @
+
+" invisible characters
+set listchars=trail:.,tab:>-,eol:$
+set nolist
+:noremap ,i :set list!<CR> " Toggle invisible chars
 
 " set default font
 set gfn=Inconsolata:h16
