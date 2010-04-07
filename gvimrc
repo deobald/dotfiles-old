@@ -2,6 +2,18 @@ syntax on
 filetype on
 compiler ruby
 
+"sets shell title to correct thing
+set title
+
+" bump up command history
+set history=1000
+
+" does good stuff with buffers
+set hidden
+
+" keep a bit of context around current cursor position
+set scrolloff=5
+
 set backupdir=/tmp
 set directory=/tmp
 
@@ -20,6 +32,10 @@ if has('gui_running')
   nnoremap <D-T> :FufTag!<CR>
 endif
 
+" make completion better
+set wildmenu
+set wildmode=list:longest
+
 " helpful insertion shortcuts?
 imap uu _
 imap hh =>
@@ -36,6 +52,8 @@ set gfn=Inconsolata:h16
 " ignore case in searches, except if you type a capital letter
 set ignorecase
 set smartcase
+set hlsearch
+set incsearch
 
 " easy to source / edit this file
 map ,s :source ~/.vimrc<CR>
@@ -93,8 +111,6 @@ let NERDTreeShowBookmarks = 1
  
 " Show hidden files
 let NERDTreeShowHidden = 1
-"Don't hijack NETRW
-"let NERDTreeHijackNetrw = 0
 let NERDTreeIgnore=['\.$', '\~$']
  
 " Make F2 open NERDTree
@@ -138,4 +154,11 @@ map <silent> <LocalLeader>rc :RunRubyFocusedContext<CR>
 map <silent> <LocalLeader>rf :RunRubyFocusedUnitTest<CR>
 
 " rebuild ctags
-map <silent> <LocalLeader>rt :!ctags -R --exclude=".git\|.svn\|log\|tmp\|db\|pkg" --extra=+f<CR>
+map <silent> <LocalLeader>rt :!ctags -R --exclude=".git\|.svn\|log\|tmp\|db\|pkg" --extra=+f<CR> 
+
+" show trailing whitespace
+set listchars=tab:>-,trail:·,eol:$
+nmap <silent> <leader>s :set nolist!<CR>
+
+" turn off annoying messages
+set shortmess=atI
