@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/garethjones/sandbox/fig'
 let g:netrw_dirhist_2='/Users/garethjones/sandbox/euler'
 let g:netrw_dirhist_3='/Users/garethjones/sandbox/pql-clojure'
 let g:netrw_dirhist_4='/Users/garethjones/sandbox/fig'
 let g:netrw_dirhist_5='/Users/garethjones/sandbox/pql-clojure'
 let g:netrw_dirhist_6='/Users/garethjones/sandbox/clojure-notes'
+let g:netrw_dirhist_7='/Users/garethjones/sandbox/dotfiles/vim'
+let g:netrw_dirhist_8='/Users/garethjones/sandbox/clojure-notes'
