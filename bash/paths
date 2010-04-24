@@ -11,5 +11,3 @@ export PATH="/usr/local/clojure:$PATH"
 #export CLASSPATH="/usr/local/jars/"
 export CLOJURE_EXT="/usr/local/jars/"
 
-if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
-
