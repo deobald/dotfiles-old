@@ -4,7 +4,7 @@
 - http://gems.rubyforge.org
 - http://gems.github.com
 update: --env-shebang
-rdoc: --inline-source --line-numbers --template=hanna
+rdoc: --inline-source --line-numbers 
 :benchmark: false
 install: --env-shebang
 :bulk_threshold: 1000

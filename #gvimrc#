@@ -3,7 +3,6 @@ call pathogen#runtime_append_all_bundles()
 syntax on
 filetype on
 compiler ruby
-set nohlsearch
 
 "sets shell title to correct thing
 set title
@@ -38,6 +37,11 @@ endif
 " make completion better
 set wildmenu
 set wildmode=list:longest
+
+" helpful insertion shortcuts?
+imap uu _
+imap hh =>
+imap aa @
 
 " invisible characters
 set listchars=trail:.,tab:>-,eol:$
@@ -155,7 +159,7 @@ map <silent> <LocalLeader>rf :RunRubyFocusedUnitTest<CR>
 map <silent> <LocalLeader>rt :!ctags -R --exclude=".git\|.svn\|log\|tmp\|db\|pkg" --extra=+f<CR> 
 
 " show trailing whitespace
-set listchars=tab:>-,trail:Â·,eol:$
+set listchars=tab:>-,trail:Â·,eol:$
 nmap <silent> <leader>s :set nolist!<CR>
 
 " turn off annoying messages
