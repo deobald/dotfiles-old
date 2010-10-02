@@ -10,6 +10,22 @@ function svn_add_new {
   svn st | grep \? | awk '{ print $2}' | xargs svn add
 }
 
+function esk_clojure {
+  if [ -h $HOME/.emacs.d ]
+  then
+    rm $HOME/.emacs.d
+  fi
+  ln -s $HOME/sandbox/esk-master $HOME/.emacs.d
+}
+
+function esk_common_lisp {
+  if [ -h $HOME/.emacs.d ]
+  then
+    rm $HOME/.emacs.d
+  fi
+  ln -s $HOME/sandbox/esk-common-lisp $HOME/.emacs.d
+}
+
 # calculator
 calc(){ awk "BEGIN{ print $* }" ;}
 

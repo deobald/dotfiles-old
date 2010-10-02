@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-CLASS_PATH=/usr/local/Cellar/clojure/1.1.0/clojure.jar:/usr/local/Cellar/clojure-contrib/1.1.0/clojure-contrib.jar:/usr/local/jars/LBM_3.6.2_jdk1.5.0_12.jar
+CLASS_PATH=$(brew --cellar)/clojure/HEAD/clojure.jar:$(brew --cellar)/clojure-contrib/HEAD/clojure-contrib.jar
 breakchars="(){}[],^%$#@\"\";:''|\\"
 
 if [ $# -eq 0 ]; then 
