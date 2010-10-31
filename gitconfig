@@ -10,6 +10,6 @@
   branch = auto
 [core]
   excludesfile = /Users/gjones/.gitignore
-  editor = mvim 
+  editor = vim 
 [apply]
   whitespace = nowarn
