@@ -160,3 +160,6 @@ nmap <silent> <leader>s :set nolist!<CR>
 
 " turn off annoying messages
 set shortmess=atI
+
+" gundo
+nnoremap <F5> :GundoToggle<CR>
