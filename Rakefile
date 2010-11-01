@@ -4,7 +4,7 @@ desc "install the dot files into user's home directory"
 task :install do
   replace_all = false
   Dir['*'].each do |file|
-    next if %w[Rakefile README LICENSE sources gems_to_install generate_completions.clj].include? file
+    next if %w[Rakefile README].include? file
     
     if File.exist?(File.join(ENV['HOME'], ".#{file}"))
       if replace_all
@@ -28,21 +28,6 @@ task :install do
     end
   end
   
-end
-
-namespace :install do
-
-  task :gems do
-    File.readlines("gems_to_install").each do |gem_to_install|
-      next if gem_to_install.nil?
-      sh "sudo gem install #{gem_to_install.gsub(/\n/, "")} --no-rdoc --no-ri"
-    end
-  end
-
-end
-
-task :generate_clj_completions do
-  `clj #{File.dirname(__FILE__) + "/generate_completions.clj"}`
 end
 
 def replace_file(file)
