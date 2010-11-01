@@ -7,6 +7,9 @@ export EDITOR='vim'
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
+# lbm 
+export DYLD_LIBRARY_PATH=/usr/local/29West/LBM_3.6/Darwin-9.8.0-x86_64/lib
+
 # aliases -----------------------------------------------------
 
 # general
