@@ -58,11 +58,6 @@ function esk_common_lisp {
   ln -s $HOME/sandbox/esk-common-lisp $HOME/.emacs.d
 }
 
-# update shitty environment file for OSX. fuck you steve jobs
-function update_environment_plist {
-  defaults write $HOME/.MacOSX/environment PATH "$PATH"
-}
-
 # set PS1 with git completions --------------------------------
 
 GIT_PS1_SHOWDIRTYSTATE=true
