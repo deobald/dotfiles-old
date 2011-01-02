@@ -22,7 +22,7 @@ set directory=/tmp
 
 if has('gui_running')
   " set default color scheme
-  colorscheme simplewhite
+  colorscheme wombat
 
   " default screen size
   set fuoptions=maxvert,maxhorz
@@ -50,7 +50,7 @@ set gfn=Inconsolata:h16
 " ignore case in searches, except if you type a capital letter
 set ignorecase
 set smartcase
-set hlsearch
+set nohlsearch
 set incsearch
 
 " easy to source / edit this file
