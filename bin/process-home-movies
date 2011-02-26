@@ -1,2 +1,2 @@
 #! /bin/bash --login
-rvm use ruby-1.8.7@home-movies && cd $HOME/sandbox/projects/ruby/home-movies && ruby process.rb >> /tmp/home-movies-`date +"%Y-%m-%d"`.log
+rvm use ruby-1.9.2@home-movies && cd $HOME/sandbox/projects/ruby/home-movies && ruby process.rb >> /tmp/home-movies-`date +"%Y-%m-%d"`.log
