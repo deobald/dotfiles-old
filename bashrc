@@ -32,32 +32,6 @@ export DYLD_LIBRARY_PATH="/usr/local/29west/LBM_3.6/Darwin-9.8.0-x86_64/lib/"
 
 # functions ---------------------------------------------------
 
-# svn 
-function svn_rm_missing {
-  svn st | grep \! | awk '{ print $2}' | xargs svn rm
-}
-
-function svn_add_new {
-  svn st | grep \? | awk '{ print $2}' | xargs svn add
-}
-
-# switch emacs environments for lisp/clojure
-function esk_clojure {
-  if [ -h $HOME/.emacs.d ]
-  then
-    rm $HOME/.emacs.d
-  fi
-  ln -s $HOME/sandbox/esk-master $HOME/.emacs.d
-}
-
-function esk_common_lisp {
-  if [ -h $HOME/.emacs.d ]
-  then
-    rm $HOME/.emacs.d
-  fi
-  ln -s $HOME/sandbox/esk-common-lisp $HOME/.emacs.d
-}
-
 # set PS1 with git completions --------------------------------
 
 GIT_PS1_SHOWDIRTYSTATE=true
@@ -69,7 +43,3 @@ fi
 # rvm ---------------------------------------------------------
 
 if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
-
-# set default mode to vi!!! this is awesome
-# set -o vi
-# bind -m vi-command -r 'v'
