@@ -5,7 +5,7 @@ export EDITOR='vim'
 
 # color the terminal
 export CLICOLOR=1
-export LSCOLORS=gxfxcxdxbxegedabagacad
+#export LSCOLORS=gxfxcxdxbxegedabagacad
 
 # aliases -----------------------------------------------------
 
