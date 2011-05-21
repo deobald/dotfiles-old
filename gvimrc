@@ -22,7 +22,6 @@ set directory=/tmp
 
 if has('gui_running')
   " set default color scheme
-  set background=light
 
   " default screen size
   set fuoptions=maxvert,maxhorz
@@ -35,6 +34,7 @@ if has('gui_running')
   nnoremap <D-T> :FufTag!<CR>
 endif
 
+set background=light
 colorscheme solarized
 
 " make completion better
