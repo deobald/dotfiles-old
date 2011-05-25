@@ -13,6 +13,6 @@
 [submodule "vim/bundle/vim-surround"]
   path = vim/bundle/vim-surround
   url = http://github.com/tpope/vim-surround.git  
-[submodule "vim/bundle/solarized"]
-	path = vim/bundle/solarized
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized

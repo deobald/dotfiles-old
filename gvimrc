@@ -25,13 +25,13 @@ if has('gui_running')
   set background=light
 
   " default screen size
-  set fuoptions=maxvert,maxhorz
+  "set fuoptions=maxvert,maxhorz
 
   " turn off scrollbar
   set guioptions-=rL
 
   " Unmap Apple+Shift+T and map to goto method
-  macmenu &File.Open\ Tab\.\.\. key=<nop>
+  "macmenu &File.Open\ Tab\.\.\. key=<nop>
   nnoremap <D-T> :FufTag!<CR>
 endif
 
@@ -47,7 +47,7 @@ set nolist
 :noremap ,i :set list!<CR> " Toggle invisible chars
 
 " set default font
-set gfn=Inconsolata:h16
+set gfn=Inconsolata\ 14
 
 " ignore case in searches, except if you type a capital letter
 set ignorecase
