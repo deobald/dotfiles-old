@@ -6,6 +6,8 @@ export EDITOR='vim'
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
+export GOROOT=$HOME/sandbox/src/go
+
 # aliases -----------------------------------------------------
 
 # general
@@ -25,6 +27,7 @@ alias glg='git log --pretty=oneline'
 
 # paths -------------------------------------------------------
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$GOROOT/bin:$PATH"
 export LD_LIBRARY_PATH="$HOME/sandbox/src/LBM_3.6/Linux-2.6-glibc-2.5-x86_64/lib/"
 
 # set PS1 with git completions --------------------------------
