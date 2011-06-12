@@ -165,3 +165,14 @@ set shortmess=atI
 
 " gundo
 nnoremap <F5> :GundoToggle<CR>
+
+" go formatting stolen from
+function Goformat()
+  let regel=line(".")
+  %!$GOROOT/bin/gofmt
+  call cursor(regel, 1)
+endfunction
+
+autocmd Filetype go command! Fmt call Goformat()
+
+
