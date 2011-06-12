@@ -27,7 +27,6 @@ alias glg='git log --pretty=oneline'
 # paths -------------------------------------------------------
 
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
-export PATH="$HOME/sandbox/src/go/bin:$PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/"
 
 # functions ---------------------------------------------------
