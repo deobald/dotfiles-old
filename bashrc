@@ -36,7 +36,7 @@ export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJD
 GIT_PS1_SHOWDIRTYSTATE=true
 if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   . /usr/local/etc/bash_completion.d/git-completion.bash;
-  export PS1='\[\033[01;34m\]\w\[\033[00m\]\[\033[01;32m\]$(__git_ps1 " (%s)")\[\033[00m\] -> '
+  export PS1='\[\033[01;34m\]\w\[\033[00m\]\[\033[01;32m\]$(__git_ps1 " (%s)")\[\033[00m\] \n$ '
 fi
 
 # rvm ---------------------------------------------------------
