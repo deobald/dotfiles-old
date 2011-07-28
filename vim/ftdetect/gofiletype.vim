@@ -1,1 +1,1 @@
-/home/gjones/sandbox/src/go/misc/vim/ftdetect/gofiletype.vim
+au BufRead,BufNewFile *.go set filetype=go

@@ -164,3 +164,6 @@ set shortmess=atI
 
 " gundo
 nnoremap <F5> :GundoToggle<CR>
+
+
+
