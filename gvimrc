@@ -23,6 +23,8 @@ set directory=/tmp
 if has('gui_running')
   " set default color scheme
   set background=light
+  colorscheme solarized
+
 
   " default screen size
   set fuoptions=maxvert,maxhorz
@@ -34,8 +36,6 @@ if has('gui_running')
   macmenu &File.Open\ Tab\.\.\. key=<nop>
   nnoremap <D-T> :FufTag!<CR>
 endif
-
-colorscheme solarized
 
 " make completion better
 set wildmenu
@@ -165,3 +165,6 @@ set shortmess=atI
 
 " gundo
 nnoremap <F5> :GundoToggle<CR>
+
+
+
