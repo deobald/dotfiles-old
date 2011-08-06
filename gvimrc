@@ -3,7 +3,6 @@ call pathogen#runtime_append_all_bundles()
 syntax on
 filetype on
 compiler ruby
-set nohlsearch
 
 "sets shell title to correct thing
 set title
@@ -60,7 +59,6 @@ map ,s :source ~/.vimrc<CR>
 map ,v :e ~/.vimrc<CR>
 
 set go-=T " hide the toolbar by default
-syntax on " turn on syntax highlighting
 set nu " show line numbers
 filetype plugin on " figure out filetype automatically
 filetype indent on " indent based on filetype

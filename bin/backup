@@ -2,7 +2,7 @@
 
 EPHALENT_IP=10.0.1.4
 YEAR=$(date +%Y)
-rsync -avu --delete --exclude='@eaDir' -e "ssh -l root" ~/Music/mp3/ root@$EPHALENT_IP:/volume1/music/gaz/
+#rsync -avu --delete --exclude='@eaDir' -e "ssh -l root" ~/Music/mp3/ root@$EPHALENT_IP:/volume1/music/gaz/
 rsync -avu --delete --exclude='@eaDir' -e "ssh -l root" ~/Documents/ root@$EPHALENT_IP:/volume1/homes/gaz/documents/
 rsync -avu --delete --exclude='@eaDir' -e "ssh -l root" ~/Pictures/Photographs/$YEAR root@$EPHALENT_IP:/volume1/photo/gaz
 rsync -avu --delete --exclude='@eaDir' -e "ssh -l root" ~/Movies/home-movies/$YEAR root@$EPHALENT_IP:/volume1/video/home-movies
