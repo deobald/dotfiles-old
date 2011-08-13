@@ -44,6 +44,3 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   export PS1='\[\033[01;34m\]\w\[\033[00m\]\[\033[01;32m\]$(__git_ps1 " (%s)")\[\033[00m\] \n$ '
 fi
 
-# rvm ---------------------------------------------------------
-
-if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
