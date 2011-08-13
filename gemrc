@@ -1,13 +1,12 @@
 --- 
 :update_sources: true
 :sources: 
-- http://gems.rubyforge.org
-- http://gems.github.com
+  - http://rubygems.org
 update: --env-shebang
 rdoc: --inline-source --line-numbers 
 :benchmark: false
 install: --env-shebang
 :bulk_threshold: 1000
-gem: --no-ri
+gem: --no-ri --no-rdoc
 :verbose: true
 :backtrace: false

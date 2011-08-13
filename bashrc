@@ -32,6 +32,7 @@ alias stop_pgsql='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 # paths -------------------------------------------------------
 
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/"
 
 # functions ---------------------------------------------------
@@ -44,3 +45,5 @@ if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
   export PS1='\[\033[01;34m\]\w\[\033[00m\]\[\033[01;32m\]$(__git_ps1 " (%s)")\[\033[00m\] \n$ '
 fi
 
+# rbenv
+eval "$(rbenv init -)"
