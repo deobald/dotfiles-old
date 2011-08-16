@@ -3,7 +3,7 @@
 :benchmark: false
 :bulk_threshold: 1000
 :sources: 
-  - http://gems.rubyforge.org
+  - http://rubygems.org
   - http://gems.github.com
   - http://gems.us.drwholdings.com:8808
 :update_sources: true
@@ -11,4 +11,4 @@
 install: --env-shebang
 update: --env-shebang
 rdoc: --inline-source --line-numbers
-gem: --no-ri
+gem: --no-ri --no-rdoc
