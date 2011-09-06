@@ -7,10 +7,13 @@ export EDITOR='vim'
 export CLICOLOR=1
 #export LSCOLORS=gxfxcxdxbxegedabagacad
 
+# add ssh completions
+source $HOME/.ssh_completion
+
 # aliases -----------------------------------------------------
 
 # general
-alias ls="ls -lach"
+alias la="ls -lach"
 alias lsd="ls | grep ^d"
 
 # git aliases
