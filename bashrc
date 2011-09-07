@@ -28,6 +28,7 @@ alias glg='git log --pretty=oneline'
 # paths -------------------------------------------------------
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$GOROOT/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 export LD_LIBRARY_PATH="$HOME/sandbox/src/LBM_3.6/Linux-2.6-glibc-2.5-x86_64/lib/"
 
 # set PS1 with git completions --------------------------------
@@ -79,5 +80,5 @@ else
   export PS1="$txtgrn\n:: "
 fi
 
-# rvm ---------------------------------------------------------
-if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
+# rbenv 
+eval "$(rbenv init -)"
