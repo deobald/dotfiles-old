@@ -10,6 +10,9 @@ export CLICOLOR=1
 # add ssh completions
 source $HOME/.ssh_completion
 
+# clojurescript
+export CLOJURESCRIPT_HOME="$HOME/sandbox/src/clojurescript"
+
 # aliases -----------------------------------------------------
 
 # general
@@ -36,6 +39,7 @@ alias stop_pgsql='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$CLOJURESCRIPT_HOME/bin:$PATH"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/"
 export DYLD_LIBRARY_PATH="/usr/local/29west/LBM_3.6/Darwin-9.8.0-x86_64/lib/"
 

@@ -5,11 +5,11 @@ Host prod-is
 
 Host prod-ts
   User prodappadmin
-  HostName sup-chiti06
+  HostName sup-chipos06
 
 Host prod-ps
   User prodappadmin
-  HostName sup-chiti05
+  HostName sup-chipos05
 
 # side-by-side stack
 Host sbs-is 
