@@ -33,4 +33,7 @@ if [ -e $ssh_config ] || [ -h $ssh_config ]; then
     rm -f $ssh_config
     ln -s $PWD/ssh/config $ssh_config
   fi
+else
+  rm -f $ssh_config
+  ln -s $PWD/ssh/config $ssh_config
 fi
