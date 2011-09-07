@@ -1,7 +1,7 @@
 #!/bin/bash
 replace=""
 
-for f in $(ls)
+for f in $(ls -l | grep ^- | awk '{ print $8}')
 do
   test $f = "install" && continue
   dest="$HOME/.$f"
@@ -24,3 +24,16 @@ do
     ln -s $file $dest
   fi
 done
+
+ssh_config="$HOME/.ssh/config" 
+if [ -e $ssh_config ] || [ -h $ssh_config ]; then
+  echo "$ssh_config already exists, replace? [y/n] "
+  read replace
+  if [ "$replace" = "y" ]; then
+    rm -f $ssh_config
+    ln -s $PWD/ssh/config $ssh_config
+  fi
+else
+  rm -f $ssh_config
+  ln -s $PWD/ssh/config $ssh_config
+fi

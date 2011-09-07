@@ -6,6 +6,9 @@ export EDITOR='vim'
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
+# add ssh completions
+source $HOME/.ssh_completion
+
 export GOROOT=$HOME/sandbox/src/go
 
 # aliases -----------------------------------------------------

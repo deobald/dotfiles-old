@@ -1,0 +1,58 @@
+# prod stack
+Host prod-is
+  User prodappadmin
+  HostName sup-chipos04
+
+Host prod-ts
+  User prodappadmin
+  HostName sup-chipos06
+
+Host prod-ps
+  User prodappadmin
+  HostName sup-chipos05
+
+# side-by-side stack
+Host sbs-is 
+  User prodappadmin
+  HostName sup-chiti06
+
+Host sbs-ts 
+  User prodappadmin
+  HostName sup-chiti07
+
+Host sbs-ps 
+  User prodappadmin
+  HostName sup-chiti08
+
+# mirror stack
+Host mirror-is mirror-ps
+  User prodappadmin
+  HostName suq-chiposqa01
+
+Host mirror-ts
+  User prodappadmin
+  HostName suq-chiposqa02
+
+# prod tfls
+Host prod-tfls
+  User prodappadmin
+  HostName sup-chiti02
+
+# prod butler
+Host prod-butler-settles
+  User prodappadmin
+  HostName sup-ldnfas01
+
+Host prod-butler-cme
+  User prodappadmin
+  HostName sup-chiticme01
+
+# prod web 
+Host prod-web-primary
+  User prodappadmin
+  HostName sup-chirisk02
+
+Host prod-web-backup
+  User prodappadmin
+  HostName sup-chiti02
+
