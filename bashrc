@@ -9,12 +9,15 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 # add ssh completions
 source $HOME/.ssh_completion
 
+# clojurescript
+export CLOJURESCRIPT_HOME=$HOME/sandbox/src/clojurescript
+
 export GOROOT=$HOME/sandbox/src/go
 
 # aliases -----------------------------------------------------
 
 # general
-alias ls="ls -lach"
+alias la="ls -lach"
 alias lsd="ls | grep ^d"
 
 # git aliases
@@ -30,6 +33,7 @@ alias glg='git log --pretty=oneline'
 
 # paths -------------------------------------------------------
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$CLOJURESCRIPT_HOME/bin:$PATH"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export LD_LIBRARY_PATH="$HOME/sandbox/src/LBM_3.6/Linux-2.6-glibc-2.5-x86_64/lib/"
