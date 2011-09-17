@@ -10,7 +10,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 # aliases -----------------------------------------------------
 
 # general
-alias ls="ls -lach"
+alias la="ls -lach"
 alias lsd="ls | grep ^d"
 
 # git aliases
