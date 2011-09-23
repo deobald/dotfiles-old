@@ -1,3 +1,8 @@
+# dev web
+Host dev-tiweb1
+  User prodappadmin
+  HostName sud-chirisk01
+
 # prod stack
 Host prod-is
   User prodappadmin

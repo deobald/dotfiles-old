@@ -36,6 +36,7 @@ export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$CLOJURESCRIPT_HOME/bin:$PATH"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/sandbox/src/cljs-watch:$PATH"
 export LD_LIBRARY_PATH="$HOME/sandbox/src/LBM_3.6/Linux-2.6-glibc-2.5-x86_64/lib/"
 
 # set PS1 with git completions --------------------------------
