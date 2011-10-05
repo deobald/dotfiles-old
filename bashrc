@@ -31,9 +31,16 @@ alias stop_pgsql='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 
 # paths -------------------------------------------------------
 
-export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
+export CLOJURESCRIPT_HOME="$HOME/sandbox/src/clojurescript"
+export CLOJURESCRIPT_WATCH_HOME="$HOME/sandbox/src/cljs-watch"
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/"
+
+export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$PATH"
+export PATH="$CLOJURESCRIPT_HOME/bin:$PATH"
+export PATH="$CLOJURESCRIPT_WATCH_HOME:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export GOROOT="$HOME/sandbox/src/go"
+export PATH="$GOROOT/bin:$PATH"
 
 # functions ---------------------------------------------------
 
