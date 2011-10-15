@@ -24,16 +24,11 @@ if has('gui_running')
   set background=light
   colorscheme solarized
 
-
   " default screen size
   set fuoptions=maxvert,maxhorz
 
   " turn off scrollbar
   set guioptions-=rL
-
-  " Unmap Apple+Shift+T and map to goto method
-  macmenu &File.Open\ Tab\.\.\. key=<nop>
-  nnoremap <D-T> :FufTag!<CR>
 endif
 
 " make completion better
@@ -90,12 +85,6 @@ nmap <D-[> <<
 vmap <D-[> <<
 imap <D-[> <C-O><<
 
-" fuzzy finder mapping
-map <leader>t :FuzzyFinderFile<CR>
-
-" renew finder cache shortcut
-map <leader>r :FuzzyFinderRenewCache<CR>
-
 " NERDTree 
  
 " Enable nice colors
@@ -140,11 +129,6 @@ nnoremap <silent><D-k> :set paste<CR>m`O<Esc>``:set nopaste<CR>
 set showmatch
 set matchtime=1
 
-let clj_want_gorilla = 1
-let clj_highlight_builtins = 1
-let clj_highlight_contrib = 1
-let clj_paren_rainbow = 1
-
 " ruby tests from drew pope
 
 map <silent> <LocalLeader>rb :RunAllRubyTests<CR>
@@ -163,6 +147,3 @@ set shortmess=atI
 
 " gundo
 nnoremap <F5> :GundoToggle<CR>
-
-
-
