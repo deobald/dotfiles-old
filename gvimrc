@@ -34,6 +34,7 @@ endif
 " make completion better
 set wildmenu
 set wildmode=list:longest
+set wildignore+=*.o,*.obj,.git,.svn,*.jar,"help/**"
 
 " invisible characters
 set listchars=trail:.,tab:>-,eol:$

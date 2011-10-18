@@ -7,3 +7,4 @@ emacs.d/elpa/*
 emacs.d/swank/*
 emacs.d/.smex-items
 emacs.d/places
+emacs.d/eshell
