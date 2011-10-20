@@ -29,5 +29,5 @@
 (require 'color-theme-solarized)
 (color-theme-solarized-light)
 
-
-
+;; where did this go in esk?
+(global-set-key (kbd "C-x \\") 'align-regexp)
