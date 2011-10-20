@@ -13,6 +13,9 @@ source $HOME/.ssh_completion
 # clojurescript
 export CLOJURESCRIPT_HOME="$HOME/sandbox/src/clojurescript"
 
+# CDPATH for quick navigation
+export CDPATH="$HOME/sandbox:/usr/local:$HOME"
+
 # aliases -----------------------------------------------------
 
 # general
