@@ -77,12 +77,6 @@
 ;; KEYBINDINGS
 ;;--------------------------------------------------
 
-;; make option the super key on mac
-(setq mac-option-modifier 'super)
-
-;; map meta to command key for mac
-(setq ns-command-modifier 'meta)
-
 (global-set-key [f7] 'ns-toggle-fullscreen)
 
 ;; steve yegges's suggested keybindings

@@ -1,6 +1,6 @@
 [user]
-	name = Gareth Jones
-  email = gareth.e.jones@gmail.com
+  name = Steven Deobald
+  email = steven@deobald.ca
 [alias]
   co = checkout
   ci = commit
@@ -9,7 +9,7 @@
   status = auto
   branch = auto
 [core]
-  excludesfile = /Users/gjones/.gitignore
+  excludesfile = /home/steven/.gitignore
   editor = vim 
 [apply]
   whitespace = nowarn
