@@ -39,6 +39,7 @@ export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/python:$
 export PATH="$CLOJURESCRIPT_HOME/bin:$PATH"
 export PATH="$CLOJURESCRIPT_WATCH_HOME:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 # functions ---------------------------------------------------
 
@@ -52,3 +53,6 @@ fi
 
 # rbenv
 eval "$(rbenv init -)"
+
+export NODE_PATH=/opt/node:/opt/node/lib/node_modules
+export PATH=$PATH:/opt/node/bin

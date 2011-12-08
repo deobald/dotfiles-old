@@ -9,8 +9,14 @@
 (when (not package-archive-contents)
   (package-refresh-contents))
 
+;; THIS IS A HACK. WHAT THE FUCK.
+(defvar color-themes nil)
+
 (defvar my-packages '(color-theme
                       color-theme-solarized
+                      color-theme-wombat
+                      color-theme-railscasts
+                      color-theme-tango
                       starter-kit
                       starter-kit-lisp
                       starter-kit-bindings
@@ -69,10 +75,15 @@
 (setq-default indent-tabs-mode nil)
 
 ;; solarized
+;; (eval-after-load 'color-theme
+;;   (progn
+;;     (require 'color-theme-solarized)
+;;     (color-theme-solarized-light)))
+
 (eval-after-load 'color-theme
   (progn
-    (require 'color-theme-solarized)
-    (color-theme-solarized-light)))
+    (require 'color-theme-wombat)
+    (color-theme-wombat)))
 
 ;; KEYBINDINGS
 ;;--------------------------------------------------
